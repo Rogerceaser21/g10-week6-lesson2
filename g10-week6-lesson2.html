@@ -1468,8 +1468,8 @@ ul.plain li::before { color:var(--p-i-ink); }
 
 
 /* Pilot and Navigator cards: shown beside the sheet, tap one to open it big */
-.role-cards { display:flex; flex-direction:column; gap:clamp(6px,0.8vw,12px); min-width:0; }
-.role-card { cursor:pointer; padding:0.5em 0.8em; font-size:calc(var(--body-size) * 0.64); line-height:1.25; }
+.role-cards { display:grid; grid-template-columns:1fr 1fr; align-items:start; gap:clamp(8px,1vw,16px); min-width:0; }
+.role-card { cursor:pointer; padding:0.5em 0.8em; font-size:var(--body-size); line-height:1.3; }
 .role-card .lede { margin:0; }
 .role-card .role-sub { margin:0.15em 0 0.2em; }
 .role-card ul { margin:0.1em 0 0.2em 1.1em; padding:0; list-style:disc; }
@@ -1762,7 +1762,7 @@ ul.plain li::before { color:var(--p-i-ink); }
 </section>
 
 <!-- 12 · Turn and Talk: which flying rule matters most -->
-<section data-element="intro" class="slide g-stack" data-tt-partner="table" data-tt-first="birthday-year" data-timer="120" data-timer-group="turntalk" data-cfu="What did your partner say, and why? || Draw two names with the Random Name Picker in plain mode, hands stay down, three seconds of Wait Time, then ask each what their partner said. || Oracy: the flight words, spoken plain words then drone words." data-notes="&lt;strong&gt;Turn and Talk, 2 minutes. Read all four lines before anyone speaks.&lt;/strong&gt; The question: which flying rule matters most with 12 drones in one room, and why? They have just read all five rules. Call Swap out loud at one minute.  &lt;span class=&#x27;tag cfu&#x27;&gt;CFU&lt;/span&gt; then Cold Call two or three students for what their partner said. &lt;strong&gt;Plain mode only in the picker: it does not know the flying pairs.&lt;/strong&gt; Gadsby strand: oracy and word wealth.">
+<section data-element="lap1" class="slide g-stack" data-tt-partner="table" data-tt-first="birthday-year" data-timer="120" data-timer-group="turntalk" data-cfu="What did your partner say, and why? || Draw two names with the Random Name Picker in plain mode, hands stay down, three seconds of Wait Time, then ask each what their partner said. || Oracy: the flight words, spoken plain words then drone words." data-notes="&lt;strong&gt;Turn and Talk, 2 minutes. Read all four lines before anyone speaks.&lt;/strong&gt; The question: which flying rule matters most with 12 drones in one room, and why? They have just read all five rules. Call Swap out loud at one minute.  &lt;span class=&#x27;tag cfu&#x27;&gt;CFU&lt;/span&gt; then Cold Call two or three students for what their partner said. &lt;strong&gt;Plain mode only in the picker: it does not know the flying pairs.&lt;/strong&gt; Gadsby strand: oracy and word wealth.">
   <div class="slide-content" style="max-width:min(96vw,2400px)">
     <p class="eyebrow reveal">// turn_and_talk</p>
     <h2 class="reveal" style="margin-bottom:calc(var(--element-gap) * 0.5)">Turn and Talk</h2>
@@ -1784,7 +1784,7 @@ ul.plain li::before { color:var(--p-i-ink); }
   <div class="slide-content" style="max-width:min(97vw,2500px)">
     <p class="eyebrow reveal">// lesson_1 &middot; skills_and_roles</p>
     <h2 class="reveal" style="margin-bottom:calc(var(--element-gap) * 0.3)">Pilot and Navigator</h2>
-    <div class="sheet-pair sheet-big reveal" style="--pair-cols:1fr 1fr">
+    <div class="sheet-pair sheet-big reveal" style="--pair-cols:0.75fr 2.25fr">
       <div class="sheet-fig sheet-slot" data-rings="b4:gold"></div>
       <div class="role-cards">
 <div class="tblock o role-card" tabindex="0" role="button" aria-label="Open the Pilot card big" data-role="pilot">
@@ -1851,7 +1851,7 @@ ul.plain li::before { color:var(--p-i-ink); }
     <p class="reveal" style="margin-top:calc(var(--element-gap) * 0.4); font-size:var(--h3-size)"><b>Same for right.</b></p>
     <div class="tblock o reveal" style="margin-top:calc(var(--element-gap) * 0.4)">
       <p class="lede" style="color:var(--p-o-ink)">Practice 1: Navigator calls</p>
-      <p style="margin-top:0.3em; font-size:var(--h3-size)">&quot;Roll left.&quot; &quot;Hover.&quot; &quot;Roll right.&quot; &quot;Hover.&quot;</p>
+      <p style="margin-top:0.3em; font-size:var(--h3-size)">Take off procedure first. &quot;Roll left.&quot; &quot;Hover.&quot; &quot;Roll right.&quot; &quot;Hover.&quot;</p>
     </div>
     <div class="tblock t reveal" style="margin-top:calc(var(--element-gap) * 0.3)">
       <p class="lede" style="color:var(--p-t-ink)">Practice 2: Navigator calls</p>
@@ -1882,7 +1882,7 @@ ul.plain li::before { color:var(--p-i-ink); }
 </section>
 
 <!-- 17 · Check in: Self After Flying and Navigator After Flying columns -->
-<section data-element="lap2" class="slide g-well" data-timer="240" data-timer-group="checkin" data-notes="&lt;strong&gt;Check in, same 4 minute clock as the sheet slide.&lt;/strong&gt; Pages 2 and 3 of the self-assessment, ring on the two columns for this step: Self Assessment After Flying and Navigator Assessment After Flying. Score yourself first, then your Navigator scores you. If your scores are different, talk about why and write one sentence of proof for each row. The barometer is 1 Not Confident, Needs support; 2 Basic, Needs guidance; 3 Developing, With reminders; 4 Confident, Independent; 5 Mastered, Can teach others. &lt;strong&gt;Metacognition:&lt;/strong&gt; the sentence of proof must name something they actually did with the drone, not a feeling.">
+<section data-element="lap2" class="slide g-well" data-timer="240" data-timer-group="checkin" data-notes="&lt;strong&gt;Check in, same 4 minute clock as the sheet slide.&lt;/strong&gt; Pages 2 and 3 of the self-assessment, ring on the two columns for this step: Self Assessment After Flying and Navigator Assessment After Flying. Score yourself first, then your Navigator scores you. If your scores are different, talk about why. The barometer is 1 Not Confident, Needs support; 2 Basic, Needs guidance; 3 Developing, With reminders; 4 Confident, Independent; 5 Mastered, Can teach others. &lt;strong&gt;Metacognition:&lt;/strong&gt; ask one pair what they did in the air that earned their score.">
   <div class="slide-content" style="max-width:min(97vw,2500px)">
     <p class="eyebrow reveal">// lesson_2 &middot; check_in &middot; rate_yourself</p>
     <h2 class="reveal" style="margin-bottom:calc(var(--element-gap) * 0.3)">Check in: score each other</h2>
@@ -1952,7 +1952,7 @@ ul.plain li::before { color:var(--p-i-ink); }
 </section>
 
 <!-- 20 · Finished every flying task? Secret Challenge: the sheet's box ringed -->
-<section data-element="lap2" class="slide g-well" data-timer="1500" data-timer-group="course" data-notes="&lt;strong&gt;Secret Challenge, only for a pair that has flown its own course both ways.&lt;/strong&gt; Do not offer it earlier. Those pairs find the hidden card and fly it inside the course minutes while the others finish. The sheet&#x27;s own box is ringed: finished every flying task, find the hidden card, plan it, fly it, write on the back. The card: &#x27;Land your drone on the far side of the desk facing the other way. Write the moves in drone words first, then fly exactly what you wrote.&#x27; &lt;strong&gt;Answer key:&lt;/strong&gt; a working order is take off procedure, throttle up, pitch forward, yaw 180 degrees, throttle down, landing procedure. The exact order can differ; what matters is that the written words match what was flown. &lt;strong&gt;Depth:&lt;/strong&gt; create and justify, in an unfamiliar context.">
+<section data-element="lap3" class="slide g-well" data-timer="1500" data-timer-group="course" data-notes="&lt;strong&gt;Secret Challenge, only for a pair that has flown its own course both ways.&lt;/strong&gt; Do not offer it earlier. Those pairs find the hidden card and fly it inside the course minutes while the others finish. The sheet&#x27;s own box is ringed: finished every flying task, find the hidden card, plan it, fly it, write on the back. The card: &#x27;Land your drone on the far side of the desk facing the other way. Write the moves in drone words first, then fly exactly what you wrote.&#x27; &lt;strong&gt;Answer key:&lt;/strong&gt; a working order is take off procedure, throttle up, pitch forward, yaw 180 degrees, throttle down, landing procedure. The exact order can differ; what matters is that the written words match what was flown. &lt;strong&gt;Depth:&lt;/strong&gt; create and justify, in an unfamiliar context.">
   <div class="slide-content" style="max-width:min(96vw,2400px)">
     <p class="eyebrow reveal">// secret_challenge</p>
     <h2 class="reveal" style="margin-bottom:calc(var(--element-gap) * 0.35)">Finished every flying task? Secret Challenge</h2>
@@ -2535,7 +2535,7 @@ ul.plain li::before { color:var(--p-i-ink); }
    The slides the teacher has hidden persist the same way, under their own version-keyed
    name, so a hide survives a refresh mid-lesson but never outlives a push.
    Everything else (font scale, teacher toggle, iSAMS state, timers) stays session-only. */
-const DECK_VERSION = 'v20261008-1100';
+const DECK_VERSION = 'v20261008-103149';
 
 /* ===========================================
    RUNTIME_STRIP: everything the boot code builds or writes at run time.
@@ -2595,7 +2595,10 @@ const ELEMENTS = [
     { text: 'Charge the batteries. Drone boxes in the cupboard. IS block booked and checked.' },
     { text: 'Calibration guide ready.', link: 'calibration guide',
       href: 'https://docs.google.com/document/d/1runJFTrQz93lhuT8_kW0Ws9x5ORxHL-VAdaI2DcwtmI/edit' },
-    { text: 'Seating plan and the deck open on the board.' },
+    { text: 'Seating plan and the deck open on the board.', link: 'seating plan',
+      href: 'https://docs.google.com/presentation/d/1ndynwlVnaz08CbuJrYc2t975CGkOwdbdliVKLhKZXzM/edit' },
+    { text: 'Lesson plan for today.', link: 'plan Doc',
+      href: 'https://docs.google.com/document/d/1L8EK44pXVhdHdnOHLpLp3ELmgiEOELYOoHKmN1j9CFI/edit' },
     { text: 'Take the register in iSAMS, one for the whole lesson.', link: 'iSAMS',
       href: 'https://aissharjah.isamshosting.cloud/main/framework' },
     /* the post lesson line: the notes slide is the last slide of the Reflection and exit card */
